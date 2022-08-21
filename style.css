@@ -11,10 +11,6 @@
 
 }
 
-*::selection{
-
-
-}
 body{
 	overflow-x: hidden;
 	padding-left: 35rem;
@@ -137,7 +133,7 @@ header .nav-menu ul li a:hover{
 	z-index: 1000;
 	display: none;
 }*/
-#menu {
+.toggle-btn {
 	position: fixed;
 	top: 2rem;
 	right: 2rem;
@@ -242,15 +238,16 @@ header .nav-menu ul li a:hover{
 
 
 .education .container {
-	display: flex;
-	align-items: center;
+	/* display: flex; */
+	/* align-items: center; */
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding: 1rem 0;
 	padding-left: 3rem;
 }
 .education .container .box{
-	width: 27rem;
+	width: 100%;
+	/* height: 50rem; */
 	margin: 4rem 1rem;
 	text-align: center;
 	background:  #1a1a1a1a;
@@ -262,7 +259,7 @@ header .nav-menu ul li a:hover{
 
 .education .container .box span{
 	font-size: 1.3rem;
-	background:;
+	/* background:; */
 	border-radius: 5rem;
 	padding: .5rem 2.5rem;
 
@@ -290,7 +287,7 @@ header .nav-menu ul li a:hover{
 
 }
 
-.portfolio .container .box{
+.pictures .container .box{
 	height: 20rem;
 	width: 26rem;
 	border-radius: 1rem;
@@ -298,14 +295,14 @@ header .nav-menu ul li a:hover{
 	overflow: hidden;
 	cursor: pointer;
 }
-.portfolio .container .box img{
+.pictures .container .box img{
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 
 }
 
-.portfolio .container .box :hover img {
+.pictures .container .box :hover img {
 	transform: scale(1.2);
 }
 
@@ -381,43 +378,80 @@ header .nav-menu ul li a:hover{
 .home{
 	padding: 1rem 4rem;
 }
+.education .container .box{
+	width: 35rem;
+}
 
 }
 
 @media(max-width: 991px){
 	header{
 		left: -120%;
+		padding: 0 20px;
 	}
 
-	#menu{
+	.toggle-btn{
 		display: block;
 	}
 	header .toggle{
 		left: 0%;
 
 	}
+	
 	body{
 		padding:0;
+		font-size: medium;
 	}
+	header .nav-menu {
+		/* display: none; */
+		/* position: absolute; */
+		width: 100%;
+		height: 100vh;
+		/* left: -120%; */
+		/* background: #0a0a0a; */
+	}
+	header .nav-menu ul {
+		display: block;
+		text-align: center;
+	}
+
+
+	.pictures .container .box{
+		height: 60rem;
+		width: 60rem;
+		border-radius: 2rem;
+		cursor: pointer; 
+	}
+	.pictures .container .box img{
+		height: 100%;
+		width: 100%;
+		object-fit: cover; 
+	
+	}
+	
+	.pictures .container .box :hover img {
+		/* transform: scale(1.2); */
+	}
+	.education .container {
+		display: flex;
+	}	
+	.education .container .box{
+		width: 50rem;
+
+	}
+	
+	
 
 }
 
-@media(max-width: 768px){
+/* @media(max-width: 768px){
 	html {
 		font-size: 50%;
 	}
 	.menu{
 		display: block;
 	}
-	.menu.active .material-symbols-outlined:nth-child (2){
-		opacity: 0;
-	}
-	.menu.active .material-symbols-outlined:nth-child (1){
-		transform: translateY(8px) rotate(45deg);
-	}
-	.menu.active .material-symbols-outlined:nth-child(3){
-		transform: translateY(-8px) rotate(-45deg);
-	}
+	
 	.nav-menu{
 		position: fixed;
 	}
@@ -440,4 +474,4 @@ header .nav-menu ul li a:hover{
 		width: 100%;
 		
 	}
-}
+} */

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
 	<title>Emmanuel Tobalase</title>
 	<meta name="viweport" content="width=device-width, initial-scale=1.0">
+	<script>angular.min.js</script>
+	<script>app.js</script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -40,14 +42,14 @@
 	<div id="menu" class="fas.fa-bars"></div>
 	<div id="menu" class="fas.fa-bars"></div> -->
 	<!-- hamburger -->
-	<span id="menu" class="material-symbols-outlined">menu</span>
+	<span class="toggle-btn" class="material-symbols-outlined">menu</span>
 	<!-- Selection page start -->
 	<section class="home" id="home">
-		<h3>Hello Dear Hiring Maneger!</h3>
+		<h3>Hello Dear Hiring Manager!</h3>
 		<h1>I'M <span>Emmanuel Tobalase</span></h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+		<p>Detail Oriented Front-End Developer, With experience applying deep technical knownledge and creative
+			design sense to amplify online traffic. Combines sound technical frameworks with appealing media assets to 
+			generate front end solution focused on expanding user bases.</p>
 		<a href="#About"><button class="btn">About Me<i class="fas fa-user"></i></button></a>
 	</section>
 	<!-- About me details start -->
@@ -58,16 +60,16 @@
 				<h3><span> Name : </span> Emmanuel Tobalase</h3>
 				<h3><span> Age : </span> 26 </h3>
 				<h3><span> Qualification : </span> B.Sc </h3>
-				<h3><span> Post : </span> Front-End developer</h3>
+				<h3><span> Post : </span> Font-End developer</h3>
 				<h3><span> Language : </span> English</h3>
-				<a href="#"><button class="btn"> download CV <span class="material-symbols-outlined">download</span> <!-- <i class="fas fa-download"></i> --></button></a>
+				<a href="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=5cb9dbd165&attid=0.2&permmsgid=msg-a:r-7825222627537303252&view=att&disp=inline&saddbat=ANGjdJ-8kKPaU8vhGy6s7CFMlvyZ2KwOT6FcjK4HrBnf4H7rPz2bzM9LAduDssv9vUn4_vsWtmc2FqVf9erWDZv0ZoFlmR9ndq-uCZoq5HLaZEyMafQidiBJmPylH-l4_0iBlpEgd9XbbZJj60B7Y8TcEao72ehJo8IjynBLfk0ibVrpr7eIVcgJFWV6krT1uMxIyfI0X2XIVlUj2lxJYg0qiAtAcOzTWQvx_Hr6wpu-ejb4mrco_gGZBzL0Ze7EPh-667x6yEeYWi3KXn66b55VNShTpGCsp1xhZdQIzwm4ugQPYPGI2TCpBZwVvl57A0tVmrz5dfgU10NR4nifCPGqlt2b_no5f1EYm5riVpvV6jFNirbgS9HU5lglx2C5q3LzkIxreYPitrEjZPdkYr3Li9lI1Smz0jRFwaCtbUMRKVhXQM2b2GbYOKTksxRAHfwnJ6NHOJu49aeHigOSUGnIZ9aWp5iQqnOLfaqocVkURA8tnZAXIFObJG8-Ex1rvyZKc_OR64QGE9afmJxCjFBhSAEw6KXd23gx2bq5-48EoGRXa0TKzhGKS9KI3yDTU4qvg0MFY5Lfd6eOCwM-2qBzVTG_RFPyg267XGGVvcYs61q8F6WcRAKbCcE3tSQqiM0POPADT_T9um63mR1y_tUCZ9aKYLNk2QOuk-UjU7XgJDzf4CggGM6sLDWbHeUKdBM-PnGYW4NNbtySrNdhJVldtkZRIhkFqCabg9aZQA" target="_blank"><button class="btn"> download CV <span class="material-symbols-outlined">download</span> <!-- <i class="fas fa-download"></i> --></button></a>
 			</div>
 			<div class="Exp">
 				<div class="box">
-					<span>1+</span>
+					<span>2+</span>
 					<h3>years of experience</h3>
 				</div>
-				<div class="Exp">
+				<!-- <div class="Exp">
 				<div class="box">
 					<span>1+</span>
 					<h3>years of experience</h3>
@@ -81,7 +83,7 @@
 				<div class="box">
 					<span>1+</span>
 					<h3>years of experience</h3>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
@@ -144,8 +146,8 @@
 	<!-- Education section end -->
 
 	<!-- Portifolio section start -->
-	<section class="portfolio" id="portfolio">
-		<h1 class="heading"> my <span>portfolio</span></h1>
+	<section class="pictures" id="pictures">
+		<h1 class="heading"> my <span>pictures</span></h1>
 		<div class="container">
 			<div class="box">
 				<img src="images/img4.jpg" alt="#">
@@ -191,7 +193,13 @@
 		
 	</section>
 	<!-- Contact section end -->
-
-<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.toggle-btn').click(function() {
+				$('.nav-menu').toggleClass('')
+			})
+		})
+	</script>
 </body>
 </html>
