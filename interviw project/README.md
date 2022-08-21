@@ -1,2 +1,0 @@
-# Bincom-Dev
-interview project
