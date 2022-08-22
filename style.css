@@ -16,13 +16,13 @@ body{
 	padding-left: 35rem;
 }
 section{
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	padding: 1rem;
 }
 .btn{
 	padding: .7rem 3rem;
-	background: #0a0a0a;
-	color: #fff; 
+	background: #0d0e0d;
+	color: rgb(250, 250, 250); 
 	cursor: pointer;
 	margin-top: 1rem;
 	font-size: 2rem;
@@ -33,8 +33,8 @@ section{
 	font-size: 1.8rem;
 }
 .btn:hover{
-	background-color: #1a1a1a1a;
-	color: #0a0a0a;
+	background: #696969;
+	color: #f5f4f4;
 }
 
 html{
@@ -151,7 +151,7 @@ header .nav-menu ul li a:hover{
 	display: flex;
 	align-items: center;
 	flex-flow: column;
-	padding: 0 15rem;
+	padding: 5rem 15rem 0;
 	justify-content: center;
 }
 .home h3{
@@ -196,6 +196,9 @@ header .nav-menu ul li a:hover{
 	padding: 2rem 1rem;
 	padding-left: 6rem;
 	font-size: 1.5rem;
+	background-color: #0a0a0a;
+	width: 30%;
+	border-radius: 5px;
 }
 
 .About .row .info h3{
@@ -206,8 +209,8 @@ header .nav-menu ul li a:hover{
 
 }
 .About .row .info h3 span{
-	color: #0a0a0a;
-	/*padding: 0 .5rem;*/
+	color: #faf5f5;
+	padding: 0 .5rem;
 
 }
 
@@ -226,6 +229,7 @@ header .nav-menu ul li a:hover{
 	text-align: center;
 	padding: 2rem;
 	margin: 2rem;
+	border-radius: 10px;
 }
 .About .row .Exp .box span {
 	font-size: 4rem;
@@ -246,12 +250,13 @@ header .nav-menu ul li a:hover{
 	padding-left: 3rem;
 }
 .education .container .box{
-	width: 100%;
+	width: 62%;
 	/* height: 50rem; */
 	margin: 4rem 1rem;
 	text-align: center;
 	background:  #1a1a1a1a;
 	padding: 1rem;
+	border-radius: 20px;
 	margin: 2rem;
 	position: relative;
 	border-left: .2rem solid #1a1a1a1a;
@@ -439,6 +444,13 @@ header .nav-menu ul li a:hover{
 		width: 50rem;
 
 	}
+	/* .home p{
+		font-size: 2rem;
+		color: #0a0a0a;
+		/* padding: 1rem 0; */
+		
+	} */
+	
 	
 	
 
