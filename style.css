@@ -265,7 +265,7 @@ header .nav-menu ul li a:hover{
 }
 
 .education .container .box span{
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	/* background:; */
 	border-radius: 5rem;
 	padding: .5rem 2.5rem;
@@ -372,9 +372,6 @@ header .nav-menu ul li a:hover{
 
 
 
-
-
-
 /*media queries*/
 
 @media(max-width: 1200px){
@@ -388,21 +385,14 @@ header .nav-menu ul li a:hover{
 .education .container .box{
 	width: 35rem;
 }
-.panel-footer section {
-	margin-bottom: 30px;
-	text-align: center;
-  }
-  .panel-footer section:nth-child(3) {
-	margin-bottom: 0; /* margin already exists on the whole row */
-  }
-  .panel-footer section hr {
-	width: 50%;
-  }
+
   
-}
+
 
 @media(max-width: 991px){
+
 	header{
+		width: 50%;
 		left: -120%;
 		padding: 0 10px;
 		background: #0d0e0d;
@@ -415,6 +405,7 @@ header .nav-menu ul li a:hover{
 
 	#toggle-btn{
 		display: block;
+		font-size: 7rem;
 	}
 	header.toggle{
 		left: 0%;
@@ -423,12 +414,17 @@ header .nav-menu ul li a:hover{
 	.home {
 		padding-top: 5rem;
 	}
-	
+	header h2{
+		font-size: 4rem;
+	}
+	header .navbar .post {
+		font-size: 4rem;
+	}
 	body{
 		padding:0;
 		padding-bottom: 5rem;
 
-		font-size: medium;
+		font-size: 3rem ;
 	}
 	header .nav-menu {
 		/* display: none; */
@@ -440,7 +436,12 @@ header .nav-menu ul li a:hover{
 	}
 	header .nav-menu ul {
 		display: block;
+		/* font-size: 3rem; */
 		text-align: center;
+	}
+	header .nav-menu ul li a {
+		font-size: 4rem;
+		background-color: rgba(112, 114, 114, 0.308);
 	}
 
 
@@ -457,6 +458,16 @@ header .nav-menu ul li a:hover{
 	
 	}
 	
+.About .row .info h3{
+	font-size: 4rem;
+}
+.About .row .info {
+	flex: 1 1 75rem;
+}
+.btn{
+	font-size: 5rem;
+}
+	
 	.pictures .container .box :hover img {
 		/* transform: scale(1.2); */
 	}
@@ -466,7 +477,20 @@ header .nav-menu ul li a:hover{
 	.education .container .box{
 		width: 50rem;
 
+
 	}
+	.education .container .box h3{
+		font-size: 4rem;
+	}
+	.education .container .box span{
+		font-size: 4rem;
+	}
+	.About .row .info h3 span {
+		font-size: 4rem;
+	}
+	/* .info h3 i {
+		font-size: 4rem;
+	} */
 	/* .home p{
 		font-size: 2rem;
 		color: #0a0a0a;
