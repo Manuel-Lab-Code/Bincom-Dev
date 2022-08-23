@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,200&display=swap');
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Uchen', serif;
+	font-family: 'Nunito', sans-serif;
 	text-decoration: none;
 	transition: all .3s linear;
 	text-transform: capitalize;
@@ -133,14 +134,15 @@ header .nav-menu ul li a:hover{
 	z-index: 1000;
 	display: none;
 }*/
-.toggle-btn {
+#toggle-btn {
 	position: fixed;
 	top: 2rem;
+	border-radius: 10px;
 	right: 2rem;
 	background: #0a0a0a;
-	color: #fff;
+	color: rgb(250, 249, 249);
 	cursor: pointer;
-	font-size: 5rem;
+	font-size: 3rem;
 	padding: 1rem 1.5rem;
 	z-index: 1000;
 	display: none;
@@ -386,25 +388,46 @@ header .nav-menu ul li a:hover{
 .education .container .box{
 	width: 35rem;
 }
-
+.panel-footer section {
+	margin-bottom: 30px;
+	text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+	margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+	width: 50%;
+  }
+  
 }
 
 @media(max-width: 991px){
 	header{
 		left: -120%;
-		padding: 0 20px;
+		padding: 0 10px;
+		background: #0d0e0d;
+		border-radius: 2px;
+	
+	}
+	header h2 {
+		color: white;
 	}
 
-	.toggle-btn{
+	#toggle-btn{
 		display: block;
 	}
-	header .toggle{
+	header.toggle{
 		left: 0%;
 
+	}
+	.home {
+		padding-top: 5rem;
 	}
 	
 	body{
 		padding:0;
+		padding-bottom: 5rem;
+
 		font-size: medium;
 	}
 	header .nav-menu {

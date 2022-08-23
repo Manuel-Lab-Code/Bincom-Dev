@@ -17,11 +17,6 @@
 			<p class="post">front-end developer</p>
 			</div>
 
-			<!-- 			<a href="#" class="toggle-btn">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-			</a> -->
 			<!-- Menu start-->
 			<nav class="nav-menu">
 				<ul>
@@ -29,7 +24,7 @@
 					<li><a href="#About">About Me</a></li>
 					<li><a href="#Contact">Contact</a></li>
 					<li><a href="#Education">Education</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#pictures">Pictures</a></li>
 					<!-- <span class="material-symbols-outlined">menu</span> -->
 				</ul>
 			<!-- Menu ends -->
@@ -37,12 +32,8 @@
 	</header>
 	<!-- < header end  -->
 
+	<span id="toggle-btn" class="material-symbols-outlined">menu</span>
 
-	<!-- <div id="menu" class="fas.fa-bars"></div>
-	<div id="menu" class="fas.fa-bars"></div>
-	<div id="menu" class="fas.fa-bars"></div> -->
-	<!-- hamburger -->
-	<span class="toggle-btn" class="material-symbols-outlined">menu</span>
 	<!-- Selection page start -->
 	<section class="home" id="home">
 		<h3>Hello Dear Hiring Manager!</h3>
@@ -52,6 +43,7 @@
 			generate front end solution focused on expanding user bases.</p>
 		<a href="#About"><button class="btn">About Me<i class="fas fa-user"></i></button></a>
 	</section>
+
 	<!-- About me details start -->
 	<section class="About" id="About">
 		<h1 class="heading"><span>About</span> Me</h1>
@@ -88,9 +80,9 @@
 		</div>
 	</section>
 	<!-- About me details End -->
-	<!-- Selection page End -->
+	<!----------------------------- Selection page End ----------------------------->
 
-	<!-- Education section start -->
+	<!-------------------------- Education section start -------------------------->
 	<section class="education" id="Education">
 		<h1 class="heading"><span>My</span> Education</h1>
 		<div class="container">
@@ -143,9 +135,9 @@
                 <span>410-602-5008</span></a><div>* We Deliver</div>
             </li> -->
 	</section>
-	<!-- Education section end -->
+	<!-------------------------- Education section end ------------------------>
 
-	<!-- Portifolio section start -->
+	<!-------------------------------- Pictures section start--------------------->
 	<section class="pictures" id="pictures">
 		<h1 class="heading"> my <span>pictures</span></h1>
 		<div class="container">
@@ -164,9 +156,9 @@
 		</div>
 		
 	</section>
-	<!-- Portifolio section end -->
+	<!-- ---------------------Pictures section end ------------------------->
 
-	<!-- Contact section start -->
+	<!-------------------------- Contact section start------------------ -->
 	<section class="Contact" id="Contact">
 	<h1 class="heading"><span>Contact</span> me </h1>
 	<div class="row">
@@ -189,18 +181,58 @@
 			<button type="submit" class="btn"> send</button>
 		</form>
 	</div>
-
+	<!-- <span class="material-symbols-outlined">
+		close
+		</span> -->
 
 		
 	</section>
-	<!-- Contact section end -->
+	<!-- ---------------------Contact section end ------------------------------>
+
+	<!--------------------------- Footer section start ------------------------->
+	<!-- <footer class="panel-footer">
+		<div class="container">
+		  <div class="row">
+			<section id="hours" class="col-sm-4">
+			  <span>Hours:</span><br>
+			  Sun-Thurs: 11:15am - 10:00pm<br>
+			  Fri: 11:15am - 2:30pm<br>
+			  Saturday Closed
+			  <hr class="visible-xs">
+			</section>
+			<section id="address" class="col-sm-4">
+			  <span>Address:</span><br>
+			  ipaja, Ayobo Road<br>
+			  Lagos Start
+			  <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+			  <hr class="visible-xs">
+			</section>
+			<section id="testimonials" class="col-sm-4">
+			  <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+			  <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+			</section>
+		  </div>
+		  <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
+		</div>
+	  </footer>
+	-------------------------- Footer section End---------------- -->
+
+	<!------------------------ javascript section Start ----------------->
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
-			$('.toggle-btn').click(function() {
-				$('.nav-menu').toggleClass('header')
-			})
-		})
+
+			$('#toggle-btn').click(function() {
+				$('this').toggleClass('<span class="material-symbols-outlined">	close</span>');
+				$('header').toggleClass('toggle');
+			});
+			$('windown').on('scroll load', function () {
+				$('#toggle-btn').removeClass('material-symbols-outlined');
+				$('header').removerClass('toggle');
+
+			});
+		});
 	</script>
+	<!------------------------- javascript section End ------------------>
 </body>
 </html>
