@@ -24,6 +24,7 @@ section{
 	padding: .7rem 3rem;
 	background: #E56D05;
 	color: #ffffff; 
+	border: none
 	cursor: pointer;
 	margin-top: 1rem;
 	font-size: 2rem;
