@@ -23,8 +23,8 @@ section{
 .btn{
 	padding: .7rem 3rem;
 	background: #4c1433;
-    color: #ffffff
-	border: none
+    color: #ffffff;
+	border: none;
 	cursor: pointer;
 	margin-top: 1rem;
 	font-size: 2rem;
@@ -171,7 +171,7 @@ header .nav-menu ul li a:hover{
 }
 
 .home p{
-	text-align: -webkit-center
+	text-align: -webkit-center;
 	font-size: 17px;
     font-weight: 400;
 	color: #0a0a0a;
@@ -235,18 +235,25 @@ header .nav-menu ul li a:hover{
 	text-align: center;
 	padding: 2rem;
 	margin: 2rem;
+	    box-shadow: 1px 2px 1px 1px;
 	border-radius: 10px;
         transition: width 2s, height 2s, transform 2s;
 }
 
 .About .row .Exp .box:hover {
-  width: 260px;
-/*   height: 300px; */
-  transform: rotate(180deg);
+      width: 260px;
+    color: #2e444a;
+    /* height: 300px; */
+    transform: rotate(360deg);
+    background-color: #42ff26;
 }
 .About .row .Exp .box span {
 	font-size: 4rem;
 	color: #07f52b;
+}
+.About .row .Exp .box span :hover{
+	color:  #0a0a0a;
+	font-size: 4rem;
 }
 .About .row .Exp .box h3 {
 	font-size: 2rem;
