@@ -262,15 +262,15 @@ header .nav-menu ul li a:hover{
 
 
 .education .container {
-	/* display: flex; */
-	/* align-items: center; */
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding: 1rem 0;
-	padding-left: 3rem;
+	display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
 }
 .education .container .box{
-	width: 62%;
+	width: 45%;
 	/* height: 50rem; */
 	margin: 4rem 1rem;
 	text-align: center;
@@ -278,8 +278,9 @@ header .nav-menu ul li a:hover{
 	padding: 1rem;
 	border-radius: 20px;
 	margin: 2rem;
-	position: relative;
-	border-left: .2rem solid #1a1a1a1a;
+	    box-shadow: 2px 3px 6px 2px;
+	    border-left: 9.2px solid #000000f5;
+    border-bottom: 2.2rem solid #13ff0bf5;
 }
 
 .education .container .box span{
@@ -307,7 +308,7 @@ header .nav-menu ul li a:hover{
 	border-radius: 50%;
 	line-height: 5rem;
 	text-align: center;*/
-	font-size: 2rem;
+	font-size: 50px;
 	color: #07f52b;
 
 }
