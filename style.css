@@ -17,7 +17,7 @@ body{
 	padding-left: 35rem;
 }
 section{
-	/* min-height: 100vh; */
+	min-height: 100vh;
 	padding: 1rem;
 }
 .btn{
@@ -312,10 +312,13 @@ header .nav-menu ul li a:hover{
 	color: #07f52b;
 
 }
-
+   .container{
+   display: flex;
+    width: 100%;
+   }
 .pictures .container .box{
-	height: 20rem;
-	width: 26rem;
+	height: auto;
+	width: 50%;
 	border-radius: 1rem;
 	margin: 2rem;
 	overflow: hidden;
