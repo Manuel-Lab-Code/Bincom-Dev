@@ -251,7 +251,7 @@ header .nav-menu ul li a:hover{
 	font-size: 4rem;
 	color: #07f52b;
 }
-.About .row .Exp .box span :hover{
+.About .row .Exp .box span:hover{
 	color:  #0a0a0a;
 	font-size: 4rem;
 }
