@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap'); */
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+/* <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,200&display=swap');
 
 *{
@@ -22,14 +22,14 @@ section{
 	padding: 1rem;
 }
 .btn{
-	padding: .7rem 3rem;
-	background: #4c1433;
+	    padding: 0.7rem 3rem;
+    background: #000000;
     color: #ffffff;
-	border: none;
-	cursor: pointer;
-	margin-top: 1rem;
-	font-size: 2rem;
-	border-radius: .5rem;
+    border: 0.2rem solid #3cff59;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 2.5rem;
 }
 .btn i{
 	padding: 0 .5rem;
@@ -173,7 +173,7 @@ header .nav-menu ul li a:hover{
 
 .home p{
 	text-align: -webkit-center;
-	font-size: 17px;
+	font-size: 2.2rem;
     font-weight: 400;
 	color: #0a0a0a;
 	padding: 1rem 0;
@@ -507,7 +507,7 @@ header .nav-menu ul li a:hover{
 		display: flex;
 	}	
 	.education .container .box{
-		width: 100%;
+	    width: 94.6rem;
 
 
 	}
@@ -548,7 +548,7 @@ header .nav-menu ul li a:hover{
 	}
 }
 
-@media(max-width: 400px){
+@media(max-width: 487px){
 	header{
 		width: 100vw;
 	}
